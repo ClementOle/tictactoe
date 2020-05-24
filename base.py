@@ -3,6 +3,8 @@ import files_functions
 import functions
 import score_functions
 
+functions.print_banner()
+
 # Init the saved data
 files_functions.init_wall_of_fame()
 

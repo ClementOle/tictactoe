@@ -32,7 +32,12 @@ def print_grid(array):
 
 
 def print_banner():
-    print("")
+    """Print the banner from banner.txt"""
+    try:
+        with open('banner.txt', 'r') as file:
+            print(file.read())
+    except:
+        print("Erreur lors du chargement de la bannière")
 
 
 def is_remaining_case():
